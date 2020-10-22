@@ -252,6 +252,11 @@ loop:
 			}
 
 			// check for \DDD
+			// https://tools.ietf.org/html/rfc1035#section-5.1
+			// \DDD           where each D is a digit is the octet corresponding to
+			//                the decimal number described by DDD.  The resulting
+			//                octet is assumed to be text and is not checked for
+			//                special meaning.
 			if i+3 < ls && isDigit(bs[i+1]) && isDigit(bs[i+2]) && isDigit(bs[i+3]) {
 				bs[i] = dddToByte(bs[i+1:])
 				copy(bs[i+1:ls-3], bs[i+4:])
@@ -572,7 +577,7 @@ func intToBytes(i *big.Int, length int) []byte {
 func PackRR(rr RR, msg []byte, off int, compression map[string]int, compress bool) (off1 int, err error) {
 	headerEnd, off1, err := packRR(rr, msg, off, compressionMap{ext: compression}, compress)
 	if err == nil {
-		// packRR no longer sets the Rdlength field on the rr, but
+		// packRR no longer c the Rdlength field on the rr, but
 		// callers might be expecting it so we set it here.
 		rr.Header().Rdlength = uint16(off1 - headerEnd)
 	}

@@ -29,13 +29,28 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="169" width="1016" height="742" key="SettingsEditor" timestamp="1602726413033">
+    <state x="488" y="159" width="1016" height="742" key="SettingsEditor" timestamp="1603179755600">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="488" y="169" width="1016" height="742" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1602726413033" />
-    <state x="685" y="261" width="621" height="580" key="find.popup" timestamp="1602687369270">
+    <state x="488" y="159" width="1016" height="742" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1603179755600" />
+    <state x="802" y="246" width="383" height="628" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603116874838">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="685" y="261" width="621" height="580" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1602687369270" />
+    <state x="802" y="246" width="383" height="628" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1603116874838" />
+    <state x="685" y="261" width="744" height="580" key="find.popup" timestamp="1603215620415">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="685" y="261" width="744" height="580" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1603215620415" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/xfr.go</url>
+          <line>222</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
